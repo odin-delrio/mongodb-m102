@@ -1,3 +1,6 @@
-/**
- * Created by odin.delrio on 2/4/15.
- */
+
+db.currentOp();
+
+db.killOp(/* id of operation*/);
+
+homework.c(); //will outputs 12
