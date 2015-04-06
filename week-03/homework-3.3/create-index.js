@@ -1,3 +1,4 @@
-/**
- * Created by odin.delrio on 2/4/15.
- */
+
+db.products.createIndex({for:1}, {sparse:true});
+
+db.products.find({"for": "ac3"}, { for:1}).explain();
