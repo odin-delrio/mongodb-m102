@@ -1,0 +1,56 @@
+2015-05-05T00:46:42.924+0200 I JOURNAL  [initandlisten] journal dir=/Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/journal
+2015-05-05T00:46:42.925+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-05-05T00:46:42.942+0200 I JOURNAL  [durability] Durability thread started
+2015-05-05T00:46:42.942+0200 I CONTROL  [initandlisten] MongoDB starting : pid=39973 port=27501 dbpath=/Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1 64-bit host=MAC-0215-2.local
+2015-05-05T00:46:42.942+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-05-05T00:46:42.943+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-05-05T00:46:42.943+0200 I CONTROL  [initandlisten] git version: nogitversion
+2015-05-05T00:46:42.943+0200 I CONTROL  [initandlisten] build info: Darwin yosemitevm.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-05-05T00:46:42.943+0200 I CONTROL  [initandlisten] allocator: system
+2015-05-05T00:46:42.943+0200 I CONTROL  [initandlisten] options: { net: { port: 27501 }, processManagement: { fork: true }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "data/s1" }, systemLog: { destination: "file", path: "s1.log" } }
+2015-05-05T00:46:42.944+0200 I INDEX    [initandlisten] allocating new ns file /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/local.ns, filling with zeroes...
+2015-05-05T00:46:42.979+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/local.0, filling with zeroes...
+2015-05-05T00:46:42.979+0200 I STORAGE  [FileAllocator] creating directory /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/_tmp
+2015-05-05T00:46:43.082+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/local.0, size: 64MB,  took 0.102 secs
+2015-05-05T00:46:43.112+0200 I NETWORK  [initandlisten] waiting for connections on port 27501
+2015-05-05T00:47:10.504+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59393 #1 (1 connection now open)
+2015-05-05T00:47:10.524+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59394 #2 (2 connections now open)
+2015-05-05T00:47:10.524+0200 I INDEX    [conn1] allocating new ns file /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/snps.ns, filling with zeroes...
+2015-05-05T00:47:10.524+0200 I INDEX    [conn2] allocating new ns file /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/test.ns, filling with zeroes...
+2015-05-05T00:47:10.573+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/snps.0, filling with zeroes...
+2015-05-05T00:47:10.573+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59395 #3 (3 connections now open)
+2015-05-05T00:47:10.679+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/snps.0, size: 64MB,  took 0.106 secs
+2015-05-05T00:47:10.679+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/test.0, filling with zeroes...
+2015-05-05T00:47:10.779+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/questions-08-10/data/s1/test.0, size: 64MB,  took 0.099 secs
+2015-05-05T00:47:10.825+0200 I INDEX    [conn1] build index on: test.system.users properties: { v: 1, unique: true, key: { user: 1.0, userSource: 1.0 }, name: "user_1_userSource_1", ns: "test.system.users" }
+2015-05-05T00:47:10.825+0200 I INDEX    [conn1] 	 building index using bulk method
+2015-05-05T00:47:10.825+0200 I INDEX    [conn1] build index done.  scanned 1 total records. 0 secs
+2015-05-05T00:47:10.890+0200 I INDEX    [conn2] build index on: snps.system.users properties: { v: 1, unique: true, key: { user: 1.0, userSource: 1.0 }, name: "user_1_userSource_1", ns: "snps.system.users" }
+2015-05-05T00:47:10.890+0200 I INDEX    [conn2] 	 building index using bulk method
+2015-05-05T00:47:10.890+0200 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2015-05-05T00:47:12.460+0200 I INDEX    [conn3] build index on: snps.elegans properties: { v: 1, key: { snp: 1.0 }, name: "snp_1", ns: "snps.elegans" }
+2015-05-05T00:47:12.461+0200 I INDEX    [conn3] 	 building index using bulk method
+2015-05-05T00:47:13.082+0200 I INDEX    [conn3] build index done.  scanned 168138 total records. 0 secs
+2015-05-05T00:47:13.096+0200 I COMMAND  [conn3] command snps.$cmd command: createIndexes { createIndexes: "elegans", indexes: [ { name: "_id_", ns: "snps.elegans", key: { _id: 1.0 } }, { name: "snp_1", ns: "snps.elegans", key: { snp: 1.0 } } ] } keyUpdates:0 writeConflicts:0 numYields:0 reslen:144 locks:{ Global: { acquireCount: { w: 1 } }, MMAPV1Journal: { acquireCount: { w: 336280 }, acquireWaitCount: { w: 5 }, timeAcquiringMicros: { w: 30374 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 637ms
+2015-05-05T00:47:13.102+0200 I NETWORK  [conn1] end connection 127.0.0.1:59393 (2 connections now open)
+2015-05-05T00:47:13.102+0200 I NETWORK  [conn2] end connection 127.0.0.1:59394 (2 connections now open)
+2015-05-05T00:47:13.102+0200 I NETWORK  [conn3] end connection 127.0.0.1:59395 (2 connections now open)
+2015-05-05T00:54:36.816+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59491 #4 (1 connection now open)
+2015-05-05T00:55:45.577+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59496 #5 (2 connections now open)
+2015-05-05T00:55:45.579+0200 I SHARDING [conn5] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2015-05-05T00:55:45.580+0200 I SHARDING [conn5] remote client 127.0.0.1:59496 initialized this host (localhost:27501) as shard s1
+2015-05-05T00:55:52.339+0200 I SHARDING [conn5] remotely refreshing metadata for snps.elegans with requested shard version 2|1||553f0ef319d7841961ac8fc1, current shard version is 0|0||000000000000000000000000, current metadata version is 0|0||000000000000000000000000
+2015-05-05T00:55:52.340+0200 I SHARDING [conn5] collection snps.elegans was previously unsharded, new metadata loaded with shard version 2|1||553f0ef319d7841961ac8fc1
+2015-05-05T00:55:52.340+0200 I SHARDING [conn5] collection version was loaded at version 2|1||553f0ef319d7841961ac8fc1, took 0ms
+2015-05-05T00:56:05.584+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59500 #6 (3 connections now open)
+2015-05-05T00:56:05.736+0200 I QUERY    [conn6] getmore snps.elegans cursorid:47533171497 ntoreturn:0 keyUpdates:0 writeConflicts:0 numYields:1313 nreturned:1 reslen:47 locks:{ Global: { acquireCount: { r: 1317 } }, MMAPV1Journal: { acquireCount: { r: 1317 } }, Database: { acquireCount: { r: 1317 } }, Collection: { acquireCount: { R: 1317 } } } 151ms
+2015-05-05T00:56:05.737+0200 I COMMAND  [conn5] command snps.$cmd command: aggregate { aggregate: "elegans", pipeline: [ { $mergeCursors: [ { host: "localhost:27501", id: 47533171497 }, { host: "localhost:27601", id: 31184510229 } ] }, { $group: { _id: "$$ROOT._id", n: { $sum: "$$ROOT.n" }, $doingMerge: true } } ], cursor: {} } keyUpdates:0 writeConflicts:0 numYields:0 reslen:130 locks:{ Global: { acquireCount: { r: 2 } }, MMAPV1Journal: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { R: 2 } } } 152ms
+2015-05-05T00:56:21.169+0200 I QUERY    [conn6] getmore snps.elegans cursorid:48015256223 ntoreturn:0 keyUpdates:0 writeConflicts:0 numYields:1313 nreturned:1 reslen:47 locks:{ Global: { acquireCount: { r: 1317 } }, MMAPV1Journal: { acquireCount: { r: 1317 } }, Database: { acquireCount: { r: 1317 } }, Collection: { acquireCount: { R: 1317 } } } 149ms
+2015-05-05T00:56:21.169+0200 I COMMAND  [conn5] command snps.$cmd command: aggregate { aggregate: "elegans", pipeline: [ { $mergeCursors: [ { host: "localhost:27501", id: 48015256223 }, { host: "localhost:27601", id: 30936959332 } ] }, { $group: { _id: "$$ROOT._id", n: { $sum: "$$ROOT.n" }, $doingMerge: true } } ], cursor: {} } keyUpdates:0 writeConflicts:0 numYields:0 reslen:130 locks:{ Global: { acquireCount: { r: 2 } }, MMAPV1Journal: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { R: 2 } } } 150ms
+2015-05-05T00:58:43.430+0200 I INDEX    [conn5] build index on: snps.elegans properties: { v: 1, key: { N2: 1.0, mutant: 1.0 }, name: "N2_1_mutant_1", ns: "snps.elegans" }
+2015-05-05T00:58:43.431+0200 I INDEX    [conn5] 	 building index using bulk method
+2015-05-05T00:58:44.206+0200 I INDEX    [conn5] build index done.  scanned 168138 total records. 0 secs
+2015-05-05T00:58:44.231+0200 I COMMAND  [conn5] command snps.$cmd command: createIndexes { createIndexes: "elegans", indexes: [ { key: { N2: 1.0, mutant: 1.0 }, name: "N2_1_mutant_1" } ] } keyUpdates:0 writeConflicts:0 numYields:0 reslen:113 locks:{ Global: { acquireCount: { w: 1 } }, MMAPV1Journal: { acquireCount: { w: 336280 }, acquireWaitCount: { w: 5 }, timeAcquiringMicros: { w: 1190 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 801ms
+2015-05-05T01:06:13.878+0200 I QUERY    [conn6] getmore snps.elegans cursorid:47881370583 ntoreturn:0 keyUpdates:0 writeConflicts:0 numYields:371 nreturned:1 reslen:47 locks:{ Global: { acquireCount: { r: 375 } }, MMAPV1Journal: { acquireCount: { r: 375 } }, Database: { acquireCount: { r: 375 } }, Collection: { acquireCount: { R: 375 } } } 125ms
+2015-05-05T01:06:13.879+0200 I COMMAND  [conn5] command snps.$cmd command: aggregate { aggregate: "elegans", pipeline: [ { $mergeCursors: [ { host: "localhost:27501", id: 47881370583 }, { host: "localhost:27601", id: 32185111715 } ] }, { $group: { _id: "$$ROOT._id", n: { $sum: "$$ROOT.n" }, $doingMerge: true } } ], cursor: {} } keyUpdates:0 writeConflicts:0 numYields:0 reslen:130 locks:{ Global: { acquireCount: { r: 2 } }, MMAPV1Journal: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { R: 2 } } } 126ms
+2015-05-05T01:07:21.441+0200 I COMMAND  [conn4] killcursors: found 0 of 1
