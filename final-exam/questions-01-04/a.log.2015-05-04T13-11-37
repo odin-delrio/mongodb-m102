@@ -1,0 +1,92 @@
+2015-05-04T15:06:17.982+0200 I JOURNAL  [initandlisten] journal dir=/Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/journal
+2015-05-04T15:06:17.982+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-05-04T15:06:17.999+0200 I JOURNAL  [durability] Durability thread started
+2015-05-04T15:06:17.999+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-05-04T15:06:17.999+0200 I CONTROL  [initandlisten] MongoDB starting : pid=34952 port=27001 dbpath=/Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1 64-bit host=MAC-0215-2.local
+2015-05-04T15:06:17.999+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-05-04T15:06:17.999+0200 I CONTROL  [initandlisten] git version: nogitversion
+2015-05-04T15:06:17.999+0200 I CONTROL  [initandlisten] build info: Darwin yosemitevm.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-05-04T15:06:17.999+0200 I CONTROL  [initandlisten] allocator: system
+2015-05-04T15:06:18.000+0200 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "a.log" } }
+2015-05-04T15:06:18.003+0200 I INDEX    [initandlisten] allocating new ns file /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/local.ns, filling with zeroes...
+2015-05-04T15:06:18.029+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/local.0, filling with zeroes...
+2015-05-04T15:06:18.030+0200 I STORAGE  [FileAllocator] creating directory /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/_tmp
+2015-05-04T15:06:18.049+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/local.0, size: 16MB,  took 0.019 secs
+2015-05-04T15:06:18.076+0200 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-05-04T15:06:18.078+0200 I NETWORK  [initandlisten] waiting for connections on port 27001
+2015-05-04T15:07:45.669+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58668 #1 (1 connection now open)
+2015-05-04T15:07:45.670+0200 I NETWORK  [conn1] end connection 127.0.0.1:58668 (0 connections now open)
+2015-05-04T15:07:45.671+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58671 #2 (1 connection now open)
+2015-05-04T15:07:47.678+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58674 #3 (2 connections now open)
+2015-05-04T15:07:47.679+0200 I NETWORK  [conn3] end connection 127.0.0.1:58674 (1 connection now open)
+2015-05-04T15:07:47.682+0200 I REPL     [WriteReplSetConfig] Starting replication applier threads
+2015-05-04T15:07:47.682+0200 I REPL     [rsSync] replSet warning did not receive a valid config yet, sleeping 5 seconds 
+2015-05-04T15:07:47.682+0200 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "z", version: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-05-04T15:07:47.683+0200 I REPL     [ReplicationExecutor] This node is localhost:27001 in the config
+2015-05-04T15:07:47.683+0200 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-05-04T15:07:47.683+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58678 #4 (2 connections now open)
+2015-05-04T15:07:47.683+0200 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2015-05-04T15:07:47.684+0200 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2015-05-04T15:07:49.684+0200 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27003 (3)
+2015-05-04T15:07:51.686+0200 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state PRIMARY
+2015-05-04T15:07:52.686+0200 I REPL     [rsSync] ******
+2015-05-04T15:07:52.686+0200 I REPL     [rsSync] creating replication oplog of size: 50MB...
+2015-05-04T15:07:52.687+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/local.1, filling with zeroes...
+2015-05-04T15:07:52.775+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/local.1, size: 64MB,  took 0.087 secs
+2015-05-04T15:07:52.791+0200 I REPL     [rsSync] ******
+2015-05-04T15:07:52.792+0200 I REPL     [rsSync] initial sync pending
+2015-05-04T15:07:52.792+0200 I REPL     [ReplicationExecutor] syncing from: localhost:27003
+2015-05-04T15:07:52.794+0200 I REPL     [rsSync] initial sync drop all databases
+2015-05-04T15:07:52.794+0200 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2015-05-04T15:07:52.794+0200 I REPL     [rsSync] initial sync clone all databases
+2015-05-04T15:07:52.795+0200 I REPL     [rsSync] initial sync data copy, starting syncup
+2015-05-04T15:07:52.795+0200 I REPL     [rsSync] oplog sync 1 of 3
+2015-05-04T15:07:52.795+0200 I REPL     [rsSync] oplog sync 2 of 3
+2015-05-04T15:07:52.796+0200 I REPL     [rsSync] initial sync building indexes
+2015-05-04T15:07:52.796+0200 I REPL     [rsSync] oplog sync 3 of 3
+2015-05-04T15:07:52.796+0200 I REPL     [rsSync] initial sync finishing up
+2015-05-04T15:07:52.797+0200 I REPL     [rsSync] replSet set minValid=55476f21:1
+2015-05-04T15:07:52.797+0200 I REPL     [rsSync] initial sync done
+2015-05-04T15:07:52.799+0200 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-05-04T15:07:52.800+0200 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-05-04T15:07:53.705+0200 I REPL     [ReplicationExecutor] could not find member to sync from
+2015-05-04T15:08:15.742+0200 I NETWORK  [conn2] end connection 127.0.0.1:58671 (1 connection now open)
+2015-05-04T15:08:15.743+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58683 #5 (3 connections now open)
+2015-05-04T15:08:17.747+0200 I NETWORK  [conn4] end connection 127.0.0.1:58678 (1 connection now open)
+2015-05-04T15:08:17.748+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58685 #6 (3 connections now open)
+2015-05-04T15:08:45.805+0200 I NETWORK  [conn5] end connection 127.0.0.1:58683 (1 connection now open)
+2015-05-04T15:08:45.805+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58689 #7 (3 connections now open)
+2015-05-04T15:08:47.809+0200 I NETWORK  [conn6] end connection 127.0.0.1:58685 (1 connection now open)
+2015-05-04T15:08:47.809+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58691 #8 (3 connections now open)
+2015-05-04T15:09:12.012+0200 I REPL     [ReplicationExecutor] syncing from: localhost:27003
+2015-05-04T15:09:12.013+0200 I REPL     [SyncSourceFeedback] replset setting syncSourceFeedback to localhost:27003
+2015-05-04T15:09:12.014+0200 I INDEX    [repl writer worker 15] allocating new ns file /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/test.ns, filling with zeroes...
+2015-05-04T15:09:12.042+0200 I STORAGE  [FileAllocator] allocating new datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/test.0, filling with zeroes...
+2015-05-04T15:09:12.054+0200 I STORAGE  [FileAllocator] done allocating datafile /Users/odin.delrio/dev/training/mongodb-m102/final-exam/question-01/data/z1/test.0, size: 16MB,  took 0.01 secs
+2015-05-04T15:09:15.863+0200 I NETWORK  [conn7] end connection 127.0.0.1:58689 (1 connection now open)
+2015-05-04T15:09:15.863+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58701 #9 (2 connections now open)
+2015-05-04T15:09:17.867+0200 I NETWORK  [conn8] end connection 127.0.0.1:58691 (1 connection now open)
+2015-05-04T15:09:17.867+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58703 #10 (3 connections now open)
+2015-05-04T15:09:44.051+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58706 #11 (3 connections now open)
+2015-05-04T15:09:44.052+0200 I COMMAND  [conn11] terminating, shutdown command received
+2015-05-04T15:09:44.052+0200 I REPL     [conn11] Stopping replication applier threads
+2015-05-04T15:09:45.388+0200 I CONTROL  [conn11] now exiting
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] shutdown: going to close listening sockets...
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] closing listening socket: 6
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] closing listening socket: 7
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] removing socket file: /tmp/mongodb-27001.sock
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] shutdown: going to flush diaglog...
+2015-05-04T15:09:45.389+0200 I NETWORK  [conn11] shutdown: going to close sockets...
+2015-05-04T15:09:45.390+0200 I STORAGE  [conn11] shutdown: waiting for fs preallocator...
+2015-05-04T15:09:45.390+0200 I NETWORK  [conn10] end connection 127.0.0.1:58703 (2 connections now open)
+2015-05-04T15:09:45.390+0200 I NETWORK  [conn9] end connection 127.0.0.1:58701 (2 connections now open)
+2015-05-04T15:09:45.390+0200 I STORAGE  [conn11] shutdown: final commit...
+2015-05-04T15:09:45.395+0200 I JOURNAL  [conn11] journalCleanup...
+2015-05-04T15:09:45.396+0200 I JOURNAL  [conn11] removeJournalFiles
+2015-05-04T15:09:45.396+0200 I JOURNAL  [conn11] Terminating durability thread ...
+2015-05-04T15:09:45.504+0200 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-05-04T15:09:45.504+0200 I JOURNAL  [durability] Durability thread stopped
+2015-05-04T15:09:45.504+0200 I STORAGE  [conn11] shutdown: closing all files...
+2015-05-04T15:09:45.504+0200 I STORAGE  [conn11] closeAllFiles() finished
+2015-05-04T15:09:45.505+0200 I STORAGE  [conn11] shutdown: removing fs lock...
+2015-05-04T15:09:45.505+0200 I CONTROL  [conn11] dbexit:  rc: 0
